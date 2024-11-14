@@ -1,0 +1,6 @@
+---
+- hosts: all
+  gather_facts: false
+  roles:
+    - name: upgrade-nginx
+      tags: upgrade-nginx

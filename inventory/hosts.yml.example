@@ -1,0 +1,9 @@
+all:
+  vars:
+    ansible_user: ssh-user # Replace this with your username for accessing server
+    ansible_port: 22 # Replace this with your SSH Port
+    ansible_ssh_private_key_file: /home/widnyana/.ssh/example.pem # Replace this with your SSH Private Key File
+  hosts:
+    server-test: # Replace this with your server name
+      ansible_host: 192.168.1.2 # Replace this with your server IP
+    # Add more hosts here if you need to
